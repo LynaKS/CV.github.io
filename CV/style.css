@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&family=Raleway:wght@400;600&family=Work+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  box-sizing: border-box;
+}
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+p {
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background-color: #f4f2dd;
+}
+header {
+  padding: 40px 30px;
+}
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+ul {
+  display: inline-flex;
+}
+li {
+  margin-right: 20px;
+}
+li a:hover {
+  color: #e7bb2c;
+}
+li:hover {
+  transform: scale(1.1);
+}
+.photo__container {
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.photo__container img:hover {
+  transform: scale(1.1);
+}
+img {
+  height: 140%;
+}
+img,
+li {
+  transition: 0.8s;
+}
+section {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+}
+
+h1 {
+  font-size: 56px;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 40px;
+}
+.main__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+}
+.main__text p {
+  font-size: 20px;
+  line-height: 36px;
+}
+.main__text a,
+.overlay-wrap a {
+  margin-top: 60px;
+  padding: 26px 30px;
+  background-color: #e7bb2c;
+  border-radius: 10px;
+  color: #000;
+  max-width: 230px;
+  transition: 0.8s;
+}
+.main__text a:hover,
+.overlay-wrap a:hover {
+  transform: scale(1.1);
+}
+
+h3 {
+  text-align: center;
+  font-size: 48px;
+  margin: 100px 0 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+.skills__container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.skills__container div {
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  background-color: #c5e1e4;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.skills__container p {
+  font-size: 30px;
+}
+p.progress {
+  font-size: 40px;
+}
+.projects__container {
+  margin-bottom: 100px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.overlay-wrap {
+  max-width: 350px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay-wrap img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-name {
+  margin-top: 30px;
+}
+
+.overlay-wrap a {
+  padding: 20px;
+  max-width: 220px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.education__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.education__container a {
+  color: #19abea;
+}
+
+.education__container ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.education__container li {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.education__container p:first-child {
+  font-size: 28px;
+}
+.education__container p:nth-child(2) {
+  margin-top: 20px;
+  font-size: 24px;
+}
+.education__container p:last-child {
+  margin-top: 20px;
+}
+footer {
+  min-height: 300px;
+  margin-top: 80px;
+  background-color: #97b9b5;
+  color: #f4f2dd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social {
+  width: 240px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social a {
+  transition: 0.5s;
+}
+.social a:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 1024px) {
+  .projects__container {
+    flex-direction: column;
+  }
+  .overlay-wrap {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .education__container li {
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 425px) {
+  p,
+  a {
+    font-size: 14px;
+  }
+  section,
+  .skills__container {
+    flex-direction: column;
+  }
+  .photo__container {
+    display: none;
+  }
+  .main-text {
+    margin: 0 auto;
+  }
+  .skills__container {
+    align-items: center;
+  }
+  .skills__container div {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+
+header {
+  padding: 30px 0;
+}
+}
